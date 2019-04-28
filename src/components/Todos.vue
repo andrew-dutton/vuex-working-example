@@ -12,9 +12,7 @@ import { mapGetters, mapActions } from 'vuex'
 
 export default {
   name: "Todos",
-  methods: {
-    ...mapActions(['fetchTodos'])
-  },
+  methods: mapActions(['fetchTodos']),
   computed: mapGetters(['allTodos']),
   created() {
     this.fetchTodos()
