@@ -12,8 +12,8 @@ import { mapGetters, mapActions } from 'vuex'
 
 export default {
   name: "Todos",
-  methods: mapActions(['fetchTodos']),
   computed: mapGetters(['allTodos']),
+  methods: mapActions(['fetchTodos']),
   created() {
     this.fetchTodos()
   }
